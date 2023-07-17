@@ -14,4 +14,5 @@ def index():
     return render_template("index.html", title = title, url=url, author=author) 
 
 
-app.run(host='0.0.0.0', port=81)
+if __name__ == '__main__':
+    app.run(debug=True)
